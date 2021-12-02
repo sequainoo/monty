@@ -59,4 +59,9 @@ void pchar(stack_t **h, unsigned int line_number);
 void pstr(stack_t **h, unsigned int line_number);
 void (*get_op_func(char *token1))(stack_t **stack, unsigned int line_number);
 
+/* doubly linked list related prototypes */
+int add_end_node(stack_t **h, int n);
+void delete_end_node(stack_t **h);
+void free_dlist(stack_t **h);
+
 #endif

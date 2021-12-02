@@ -57,5 +57,6 @@ void _div(stack_t **h, unsigned int line_number);
 void _mod(stack_t **h, unsigned int line_number);
 void pchar(stack_t **h, unsigned int line_number);
 void pstr(stack_t **h, unsigned int line_number);
+void (*get_op_func(char *token1))(stack_t **stack, unsigned int line_number);
 
 #endif
